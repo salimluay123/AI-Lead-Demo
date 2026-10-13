@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automation Consultation</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f7fa;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 520px;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 24px;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      background: #111;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Let's automate your business</h1>
+
+    <p>
+      Tell us what you're trying to improve and we'll review your request.
+    </p>
+
+    <form
+      action="https://salimluay.app.n8n.cloud/webhook/305c374a-7a41-4835-89a5-23f236984902"
+      method="POST"
+    >
+
+      <label>Name</label>
+      <input type="text" name="name" required />
+
+      <label>Email</label>
+      <input type="email" name="email" required />
+
+      <label>What would you like to automate?</label>
+      <textarea
+        name="message"
+        rows="6"
+        placeholder="Example: I want to automatically capture leads from my website and notify my sales team..."
+        required
+      ></textarea>
+
+      <button type="submit">Submit Request</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
