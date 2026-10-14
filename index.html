@@ -4,9 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Automation Consultation</title>
-
   <style>
-    * {
+  .form-note {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 13px;
+    text-align: center;
+    color: #777;
+  }
+    
+  * {
       box-sizing: border-box;
       font-family: Arial, sans-serif;
     }
@@ -28,6 +35,16 @@
       border-radius: 16px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
+    .badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+  padding: 7px 10px;
+  border-radius: 20px;
+  background: #f0f0f0;
+}
 
     h1 {
       margin-top: 0;
@@ -80,11 +97,12 @@
 <body>
 
   <div class="card">
-    <h1>Let's automate your business</h1>
-
-    <p>
-      Tell us what you're trying to improve and we'll review your request.
-    </p>
+    <div class="badge">AI AUTOMATION SYSTEMS</div>
+    <h1>Turn repetitive work into automated systems.</h1>
+<p>
+  Tell us what's slowing your business down. We'll review your workflow
+  and identify where automation can save time and improve follow-up.
+</p>
 
     <form
       action="https://salimluay.app.n8n.cloud/webhook/305c374a-7a41-4835-89a5-23f236984902"
@@ -114,8 +132,10 @@
           autocomplete="off"
         />
       </div>
-      <button type="submit">Submit Request</button>
-
+      <button type="submit">Request Automation Review</button>
+      <p class="form-note">
+        No commitment. We'll review your workflow and get back to you shortly.
+      </p>
     </form>
   </div>
 
